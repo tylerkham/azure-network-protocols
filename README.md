@@ -23,10 +23,22 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create a Resource Group
+- Create a Windows 10 Virtual Machine (VM)
+- Create a Linux (Ubuntu) VM
+- Ensure both VMs are in the same Virtual Network / Subnet
+- If using Mac, install Microsoft Remote Desktop
+- Use Remote Desktop to connect to your Windows 10 Virtual Machine
+- Within your Windows 10 Virtual Machine, Install Wireshark
+- Open Wireshark and start packet capture
+- Within Wireshark, filter for ICMP traffic only
+- Retrieve the private IP address of the Ubuntu VM (linux-vm) and attempt to ping it from within the Windows 10 VM
+- From The Windows 10 VM, open command line or PowerShell and attempt to ping a public website (such as www.google.com) and observe the traffic in WireShark
+- Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM
+- (Observe SSH Traffic)
+- (Observe DHCP Traffic)
+- (Observe DNS Traffic)
+- (Observe RDP Traffic)
 
 <h2>Actions and Observations</h2>
 
