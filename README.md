@@ -41,6 +41,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - (Observe RDP Traffic)
 
 <h2>Actions and Observations</h2>
+
 <h3>Step 1: Create a Resource Group</h3>
 
 ![01](https://github.com/user-attachments/assets/c3a27f88-bd59-4221-b53b-c95aa7e570c4)
@@ -59,6 +60,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>Authentication type: Username/Password</p>
 
 ![04](https://github.com/user-attachments/assets/4daf8eb0-d982-49c4-9fab-9380eab3557b)
+
+<h2>(Observe ICMP Traffic)</h2>
 
 <h3>Step 4: If using Mac, install Microsoft Remote Desktop</h3>
 
@@ -90,6 +93,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 ![11](https://github.com/user-attachments/assets/706fd04f-54b0-438b-94ef-a072f07cae45)
 
+<h2>(Configuring a Firewall [Network Security Group])</h2>
+
 <h3>Step 11: Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM</h3>
 
 ![12](https://github.com/user-attachments/assets/b6dc3b9d-5369-4939-a9d3-75747c163628)
@@ -117,20 +122,52 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <p>Press Control + C to stop the ping activity</p>
 
+<h2>(Observe SSH Traffic)</h2>
 
+<h3>Step 12: Back in Wireshark, start a packet capture up</h3>
 
+<h3>Step 13: Filter for SSH traffic only</h3>
 
+![19](https://github.com/user-attachments/assets/853c004f-41b7-4f5a-9864-bfe72e1dc5ba)
 
+<h3>Step 14: From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address)</h3>
 
+<h3>Step 15: Open PowerShell, and type: ssh labuser@<private IP address></h3>
 
+<p>Type commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark</p>
 
+![{DAF75C29-1F4C-4B77-A11C-D3B38C0049B0}](https://github.com/user-attachments/assets/f4f680c4-b35a-42f6-b51c-c304892000fd)
 
+<p>Exit the SSH connection by typing ‘exit’ and pressing [Enter]</p>
 
+<h2>(Observe DHCP Traffic)</h2>
 
+<h3>Step 16: Back in Wireshark, filter for DHCP traffic only</h3>
 
+<h3>Step 17: From your Windows 10 VM, attempt to issue your VM a new IP address from the command line</h3>
 
+<p>Open PowerShell as admin and run: ipconfig /renew</p>
 
+![21](https://github.com/user-attachments/assets/b33d186c-0524-436f-ab5e-7c3f524bf708)
 
+<p>Observe the DHCP traffic appearing in WireShark</p>
 
+<h2>(Observe DNS Traffic)</h2>
+
+<h3>Step 18: Back in Wireshark, filter for DNS traffic only</h3>
+
+<p>From your Windows 10 VM within a command line, use nslookup to see what google.com and disney.com’s IP addresses are</p>
+
+![22](https://github.com/user-attachments/assets/5688ca02-0141-4dc7-9830-3e1a15447a3d)
+
+<h2>(Observe RDP Traffic)</h2>
+
+<h3>Step: 19: Back in Wireshark, filter for RDP traffic only (tcp.port == 3389)</h3>
+
+<h2>Lab Cleanup</h2>
+
+<h3>Close your Remote Desktop connection</h3>
+<h3>Delete the Resource Group(s) created at the beginning of this lab</h3>
+<h3>Verify Resource Group Deletion</h3>
 
 
