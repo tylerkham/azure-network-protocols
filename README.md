@@ -41,27 +41,24 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - (Observe RDP Traffic)
 
 <h2>Actions and Observations</h2>
+<h3>Step 1: Create a Resource Group</h3>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+![01](https://github.com/user-attachments/assets/c3a27f88-bd59-4221-b53b-c95aa7e570c4)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<h3>Step 2: Create a Windows 10 Virtual Machine (VM)</h3>
+<p>While creating the VM, select the previously created Resource Group</p>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+![02](https://github.com/user-attachments/assets/5bf1a2b0-9ec8-44ba-b538-addde375d187)
+
+<p>While creating the VM, allow it to create a new Virtual Network (Vnet) and Subnet</p>
+
+![03](https://github.com/user-attachments/assets/8e9d496b-7238-4bdf-8394-794eead4e305)
+
+<h3>Step 3: Create a Linux (Ubuntu) VM)</h3>
+<p>While creating the VM, select the previously created Resource Group and Virtual Network—the Virtual Network MUST BE THE SAME.</p>
+<p>Authentication type: Username/Password</p>
+
+![04](https://github.com/user-attachments/assets/4daf8eb0-d982-49c4-9fab-9380eab3557b)
+
+
+
