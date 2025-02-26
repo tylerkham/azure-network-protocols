@@ -53,7 +53,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <p>While creating the VM, allow it to create a new Virtual Network (Vnet) and Subnet</p>
 
-![03](https://github.com/user-attachments/assets/8e9d496b-7238-4bdf-8394-794eead4e305)
+![03](https://github.com/user-attachments/assets/a420a3b8-cd7d-45cb-9506-8b402fe5b1c5)
 
 <h3>Step 3: Create a Linux (Ubuntu) VM)</h3>
 <p>While creating the VM, select the previously created Resource Group and Virtual Network—the Virtual Network MUST BE THE SAME.</p>
