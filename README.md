@@ -132,7 +132,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h3>Step 14: From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address)</h3>
 
-<h3>Step 15: Open PowerShell, and type: ssh labuser@<private IP address></h3>
+<h3>Step 15: Open PowerShell, and type: ssh [username for linux vm]@[private IP address]</h3>
 
 <p>Type commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark</p>
 
